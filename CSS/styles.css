@@ -779,7 +779,7 @@ ul.our-activities__list {
   background-color: var(--background-color-crew);
   text-align: center;
 }
-.crew-title {
+.crew__title {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 50px;
@@ -857,7 +857,7 @@ ul.our-activities__list {
   transition: width 0.25s cubic-bezier(0.4, 0, 0.2, 1),
     background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-title {
+.clients__title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
@@ -867,7 +867,7 @@ ul.our-activities__list {
   text-align: center;
 }
 
-.client-list {
+.clients__list {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -875,8 +875,8 @@ ul.our-activities__list {
   margin-bottom: 94px;
 }
 
-.client-icon-card,
-.client-icon-card a {
+.clients__item,
+.clients__link a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -885,23 +885,23 @@ ul.our-activities__list {
   height: 92px;
 }
 
-.client-icon-card {
+.clients__item {
   border: 1px solid #afb1b8;
 }
 
-.client-icon-card svg {
+.clients__item svg {
   fill: rgba(175, 177, 184, 1);
   transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-icon-card:hover,
-.client-icon-card:focus {
+.clients__item:hover,
+.clients__item:focus {
   fill: var(--hover-focus-color);
   border: 1px solid var(--hover-focus-color);
   cursor: pointer;
 }
-.client-icon-card:hover svg,
-.client-icon-card:focus svg {
+.clients__item:hover svg,
+.clients__item:focus svg {
   fill: var(--hover-focus-color);
 }
 
