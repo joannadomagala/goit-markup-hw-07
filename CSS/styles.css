@@ -703,10 +703,10 @@ a.privacy-policy-link {
   width: 270px;
   margin-top: 94px;
 }
-.home-list-container {
+.our-activities {
   margin-top: 30px;
 }
-ul.home-list {
+ul.our-activities__list {
   list-style: none;
   display: flex;
   flex-wrap: nowrap;
@@ -714,24 +714,24 @@ ul.home-list {
   padding-left: 0;
   justify-content: center;
 }
-.list-title {
+.our-activities__title {
   font-size: 14px;
   font-weight: 700;
   align-content: center;
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-.list-descr {
+.our-activities__descr {
   font-size: 14px;
   color: var(--font-color-describe);
   margin-top: 10px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.task-list-container {
+.what-we-do {
   display: inline-block;
 }
-.task-list-title {
+.what-we-do__title {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
@@ -739,16 +739,16 @@ ul.home-list {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-.task-list-pics {
+.what-we-do__item {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
-.pics-and-descrb {
+.what-we-do__picture {
   position: relative;
   z-index: -1;
 }
-.description {
+.what-we-do__picture__descr {
   font-family: inherit;
   font-size: 14px;
   text-transform: uppercase;
@@ -765,11 +765,11 @@ ul.home-list {
   background-color: var(--background-color-decription);
   color: #fff;
 }
-.task-list-pics figure {
+.what-we-do__item figure {
   display: flex;
   align-items: center;
 }
-.task-list-pics figcaption {
+.what-we-do__item figcaption {
   margin: 0;
   display: flex;
   align-items: center;
