@@ -13,21 +13,23 @@
     <link rel="stylesheet" type="text/css" href="./CSS/styles.css" />
   </head>
   <body>
-    <header class="container">
-      <div class="logo-nav">
-        <a href="./" class="logo">
-          <span class="web">Web</span><span class="studio"><b>Studio</b></span>
+    <header class="header container">
+      <div class="header__logo">
+        <a href="./" class="logo__link">
+          <span class="logo__web">Web</span
+          ><span class="logo__studio"><b>Studio</b></span>
         </a>
-        <nav>
-          <ul class="navigation">
-            <li><a href="./">Agencja</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="./">Kontakt</a></li>
-          </ul>
-        </nav>
       </div>
-      <ul class="kontakt-up">
-        <li class="email-header-icon">
+      <nav>
+        <ul class="header__nav">
+          <li><a href="./" class="nav__link">Agencja</a></li>
+          <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+          <li><a href="./" class="nav__link">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <ul class="header__kontakt">
+        <li class="kontakt--primary">
           <a href="mailto:info@studio.com">
             <svg width="16" height="12">
               <use href="./images/icons.svg#icon-envelope"></use>
@@ -35,7 +37,7 @@
           </a>
           <a href="mailto:info@studio.com">info@studio.com</a>
         </li>
-        <li class="phone-header-icon">
+        <li class="kontakt--primary">
           <a href="tel:+48111111111">
             <svg width="10" height="16">
               <use href="./images/icons.svg#icon-smartphone"></use>
@@ -47,7 +49,7 @@
     </header>
     <main>
       <section class="main-side section">
-        <div class="container-main-side">
+        <div class="main-side__content">
           <h1>
             <span>efektywne rozwiązania</span>
             <span>dla waszego biznesu</span>
@@ -175,7 +177,7 @@
       </section>
       <section class="container">
         <div class="our-activities">
-          <ul class="our-activities__list">
+          <ul class="our-activities__items">
             <li>
               <h2 class="our-activities__title">LOREM IPSUM</h2>
               <p class="our-activities__descr">
@@ -209,36 +211,36 @@
       </section>
 
       <section class="section container">
-        <div class="what-we-do container">
-          <h2 class="what-we-do__title">Czym się zajmujemy</h2>
-          <div class="what-we-do__item">
-            <figure class="what-we-do__picture">
+        <div class="services container">
+          <h2 class="services__title">Czym się zajmujemy</h2>
+          <div class="services__item">
+            <figure class="services__picture">
               <img
                 src="images/img-work-1.jpg"
                 alt="view of a hand on a computer keyboard"
                 width="370"
               />
-              <figcaption class="what-we-do__picture__descr">
+              <figcaption class="services__picture__descr">
                 aplikacje komputerowe
               </figcaption>
             </figure>
-            <figure class="what-we-do__picture">
+            <figure class="services__picture">
               <img
                 src="images/img-work-2.jpg"
                 alt="man uses phone and computer"
                 width="370"
               />
-              <figcaption class="what-we-do__picture__descr">
+              <figcaption class="services__picture__descr">
                 aplikacje mobilne
               </figcaption>
             </figure>
-            <figure class="what-we-do__picture">
+            <figure class="services__picture">
               <img
                 src="images/img-work-3.jpg"
                 alt="tablet view with color palette"
                 width="370"
               />
-              <figcaption class="what-we-do__picture__descr">
+              <figcaption class="services__descr">
                 rozwiązania graficzne
               </figcaption>
             </figure>
@@ -246,41 +248,41 @@
         </div>
       </section>
       <section class="crew section">
-        <h2 class="crew__title">Nasz Zespół</h2>
-        <div class="crew-container">
-          <ul class="crew-list container">
-            <li class="crew-card">
+        <h2 class="section__title">Nasz Zespół</h2>
+        <div class="crew__items">
+          <ul class="crew__list container">
+            <li class="crew__card">
               <img
                 src="images/JohnDoe-1.jpg"
                 alt="smiling elegantly dressed man"
                 width="270"
                 height="260"
               />
-              <p class="crew-name">John Doe</p>
+              <p class="crew__name">John Doe</p>
               <p class="crew-position">Product designer</p>
-              <ol class="social-crew">
-                <li class="icon-crew icon-circle-crew">
+              <ol class="crew-sm">
+                <li class="sm__icon sm_icon_circle">
                   <a href="./">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="icon-crew icon-circle-crew">
+                <li class="sm__icon sm_icon_circle">
                   <a href="./">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="icon-crew icon-circle-crew">
+                <li class="sm__icon sm_icon_circle">
                   <a href="./">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="icon-crew icon-circle-crew">
+                <li class="sm__icon sm_icon_circle">
                   <a href="./">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin"></use>
@@ -289,78 +291,38 @@
                 </li>
               </ol>
             </li>
-            <li class="crew-card">
+            <li class="crew__card">
               <img
-                src="images/JaneDoe-2.jpg"
-                alt="smiling elegantly dressed woman"
-                width="270"
-                height="260"
-              />
-              <p class="crew-name">Jane Doe</p>
-              <p class="crew-position">Frontend Developer</p>
-              <ol class="social-crew">
-                <li class="icon-crew icon-circle-crew">
-                  <a href="./">
-                    <svg width="20" height="20">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="icon-crew icon-circle-crew">
-                  <a href="./">
-                    <svg width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="icon-crew icon-circle-crew">
-                  <a href="./">
-                    <svg width="20" height="20">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="icon-crew icon-circle-crew">
-                  <a href="./">
-                    <svg width="20" height="20">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ol>
-            </li>
-            <li class="crew-card">
-              <img
-                src="images/JohnDoe-3.jpg"
+                src="images/JohnDoe-1.jpg"
                 alt="smiling elegantly dressed man"
                 width="270"
                 height="260"
               />
-              <p class="crew-name">John Doe</p>
-              <p class="crew-position">Marketing</p>
-              <ol class="social-crew">
-                <li class="icon-crew icon-circle-crew">
+              <p class="crew__name">John Doe</p>
+              <p class="crew-position">Product designer</p>
+              <ol class="crew-sm">
+                <li class="sm__icon sm_icon_circle">
                   <a href="./">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="icon-crew icon-circle-crew">
+                <li class="sm__icon sm_icon_circle">
                   <a href="./">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="icon-crew icon-circle-crew">
+                <li class="sm__icon sm_icon_circle">
                   <a href="./">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="icon-crew icon-circle-crew">
+                <li class="sm__icon sm_icon_circle">
                   <a href="./">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin"></use>
@@ -369,38 +331,78 @@
                 </li>
               </ol>
             </li>
-            <li class="crew-card">
+            <li class="crew__card">
               <img
-                src="images/JohnDoe-4.jpg"
-                alt="smiling man wearing a black t-shirt"
+                src="images/JohnDoe-1.jpg"
+                alt="smiling elegantly dressed man"
                 width="270"
                 height="260"
               />
-              <p class="crew-name">John Doe</p>
-              <p class="crew-position">UI Designer</p>
-              <ol class="social-crew">
-                <li class="icon-crew icon-circle-crew">
+              <p class="crew__name">John Doe</p>
+              <p class="crew-position">Product designer</p>
+              <ol class="crew-sm">
+                <li class="sm__icon sm_icon_circle">
                   <a href="./">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="icon-crew icon-circle-crew">
+                <li class="sm__icon sm_icon_circle">
                   <a href="./">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="icon-crew icon-circle-crew">
+                <li class="sm__icon sm_icon_circle">
                   <a href="./">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="icon-crew icon-circle-crew">
+                <li class="sm__icon sm_icon_circle">
+                  <a href="./">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ol>
+            </li>
+            <li class="crew__card">
+              <img
+                src="images/JohnDoe-1.jpg"
+                alt="smiling elegantly dressed man"
+                width="270"
+                height="260"
+              />
+              <p class="crew__name">John Doe</p>
+              <p class="crew-position">Product designer</p>
+              <ol class="crew-sm">
+                <li class="sm__icon sm_icon_circle">
+                  <a href="./">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="sm__icon sm_icon_circle">
+                  <a href="./">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="sm__icon sm_icon_circle">
+                  <a href="./">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="sm__icon sm_icon_circle">
                   <a href="./">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin"></use>
@@ -464,50 +466,50 @@
     </main>
 
     <footer>
-      <div class="footer-container container">
-        <div class="logo-and-adress">
-          <a href="./" class="logo-footer">
-            <span class="web">Web</span
-            ><span class="studio-footer">Studio</span>
+      <div class="footer container">
+        <div class="footer__logo footer__kontakt">
+          <a href="./" class="logo__link">
+            <span class="logo__web">Web</span
+            ><span class="logo__studio logo__studio--dark">Studio</span>
           </a>
-          <div class="address">
-            <ul class="kontakt-down">
+          <div class="kontakt">
+            <ul class="kontakt--secondary">
               <li>m. Warszawa, Aleje Jerozolimskie 21</li>
-              <li class="kontakt-footer">
+              <li class="kontakt--secondary">
                 <a href="mailto:info@studio.com">info@studio.com</a>
               </li>
-              <li class="kontakt-footer">
+              <li class="kontakt--secondary">
                 <a href="tel:+48111111111">+48 111 111 111</a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="social-footer">
-          <h3 class="social-title-footer">dołącz do nas</h3>
-          <ul class="footer-icons">
-            <li class="icons-footer icon-circle">
-              <a href="./">
+        <h3 class="footer__title">dołącz do nas</h3>
+        <div class="footer__sm">
+          <ul class="sm__icon">
+            <li class="sm__icon--secondary sm__circle--secondary">
+              <a href="./" class="sm__link">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="icons-footer icon-circle">
-              <a href="./">
+            <li class="sm__icon--secondary sm__circle--secondary">
+              <a href="./" class="sm__link">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="icons-footer icon-circle">
-              <a href="./">
+            <li class="sm__icon--secondary sm__circle--secondary">
+              <a href="./" class="sm__link">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="icons-footer icon-circle">
-              <a href="./">
+            <li class="sm__icon--secondary sm__circle--secondary">
+              <a href="./" class="sm__link">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -515,26 +517,25 @@
             </li>
           </ul>
         </div>
-        <div class="newsletter">
-          <form>
-            <h3 class="newsletter-title">Zapisz się do newslettera</h3>
-            <label>
-              <input
-                type="email"
-                name="email"
-                placeholder="E-mail"
-                class="newsletter-input"
-                required
-              />
-            </label>
-            <button type="submit" class="newsletter-button">
-              Zapisz się
-              <svg width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
+
+        <h3 class="footer__title">Zapisz się do newslettera</h3>
+        <form class="form">
+          <label>
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              class="form__input"
+              required
+            />
+          </label>
+          <button type="submit" class="form__submit button">
+            Zapisz się
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
