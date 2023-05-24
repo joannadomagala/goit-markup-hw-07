@@ -703,10 +703,10 @@ a.privacy-policy-link {
   width: 270px;
   margin-top: 94px;
 }
-.our-activities {
+.home-list-container {
   margin-top: 30px;
 }
-ul.our-activities__list {
+ul.home-list {
   list-style: none;
   display: flex;
   flex-wrap: nowrap;
@@ -714,24 +714,24 @@ ul.our-activities__list {
   padding-left: 0;
   justify-content: center;
 }
-.our-activities__title {
+.list-title {
   font-size: 14px;
   font-weight: 700;
   align-content: center;
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-.our-activities__descr {
+.list-descr {
   font-size: 14px;
   color: var(--font-color-describe);
   margin-top: 10px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.what-we-do {
+.task-list-container {
   display: inline-block;
 }
-.what-we-do__title {
+.task-list-title {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
@@ -739,16 +739,16 @@ ul.our-activities__list {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-.what-we-do__item {
+.task-list-pics {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
-.what-we-do__picture {
+.pics-and-descrb {
   position: relative;
   z-index: -1;
 }
-.what-we-do__picture__descr {
+.description {
   font-family: inherit;
   font-size: 14px;
   text-transform: uppercase;
@@ -765,11 +765,11 @@ ul.our-activities__list {
   background-color: var(--background-color-decription);
   color: #fff;
 }
-.what-we-do__item figure {
+.task-list-pics figure {
   display: flex;
   align-items: center;
 }
-.what-we-do__item figcaption {
+.task-list-pics figcaption {
   margin: 0;
   display: flex;
   align-items: center;
@@ -779,7 +779,7 @@ ul.our-activities__list {
   background-color: var(--background-color-crew);
   text-align: center;
 }
-.crew__title {
+.crew-title {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 50px;
@@ -857,7 +857,7 @@ ul.our-activities__list {
   transition: width 0.25s cubic-bezier(0.4, 0, 0.2, 1),
     background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients__title {
+.clients-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
@@ -867,7 +867,7 @@ ul.our-activities__list {
   text-align: center;
 }
 
-.clients__list {
+.client-list {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -875,8 +875,8 @@ ul.our-activities__list {
   margin-bottom: 94px;
 }
 
-.clients__item,
-.clients__link a {
+.client-icon-card,
+.client-icon-card a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -885,23 +885,23 @@ ul.our-activities__list {
   height: 92px;
 }
 
-.clients__item {
+.client-icon-card {
   border: 1px solid #afb1b8;
 }
 
-.clients__item svg {
+.client-icon-card svg {
   fill: rgba(175, 177, 184, 1);
   transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__item:hover,
-.clients__item:focus {
+.client-icon-card:hover,
+.client-icon-card:focus {
   fill: var(--hover-focus-color);
   border: 1px solid var(--hover-focus-color);
   cursor: pointer;
 }
-.clients__item:hover svg,
-.clients__item:focus svg {
+.client-icon-card:hover svg,
+.client-icon-card:focus svg {
   fill: var(--hover-focus-color);
 }
 
